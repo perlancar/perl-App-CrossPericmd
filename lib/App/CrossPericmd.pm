@@ -22,15 +22,23 @@ consumed by other tools.
 _
     args => {
         aoaos => {
-            schema => ['array*', of=>{
-                ['array*', of=>'str*',
-                 'x.perl.coerce_rules' => ['str_comma_sep']],
+            schema => ['array*', {
+                min_len => 2,
+                of => ['array*', {
+                    of => 'str*',
+                    'x.perl.coerce_rules' => ['str_comma_sep']
+                }],
             }],
             req => 1,
             pos => 0,
             greedy => 1,
         },
     },
+    examples => [
+        {
+            argv => ['1,2,3','4,5'],
+        },
+    ],
 };
 sub cross {
     require Set::CrossProduct;
