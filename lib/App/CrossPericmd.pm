@@ -40,6 +40,11 @@ _
         {
             argv => ['1,2,3','4,5'],
         },
+        {
+            src => '[[prog]] 1,2,3 4,5 --json',
+            src_plang => 'bash',
+            summary => 'Same as previous example, but output JSON',
+        },
     ],
 };
 sub cross {
