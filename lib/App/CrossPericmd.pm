@@ -14,10 +14,10 @@ $SPEC{cross} = {
     summary => 'Output the cross product of two or more sets',
     description => <<'_',
 
-This is more or less the same as the `cross` CLI on CPAN (from
-`Set::CrossProduct`) except that this CLI is written using the
-`Perinci::CmdLine` framework. It returns table data which might be more easily
-consumed by other tools.
+This is more or less the same as the <prog:cross> CLI on CPAN (from
+<pm:Set::CrossProduct>) except that this CLI is written using the
+<pm:Perinci::CmdLine> framework. It returns table data which might be more
+easily consumed by other tools.
 
 _
     args => {
