@@ -22,6 +22,8 @@ consumed by other tools.
 _
     args => {
         aoaos => {
+            'x.name.is_plural' => 1,
+            'x.name.singular' => 'aos',
             schema => ['array*', {
                 min_len => 2,
                 of => ['array*', {
