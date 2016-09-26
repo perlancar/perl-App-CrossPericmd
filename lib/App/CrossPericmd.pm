@@ -45,6 +45,14 @@ _
             src_plang => 'bash',
             summary => 'Same as previous example, but output JSON',
         },
+        {
+            src => '[[prog]] 1,2 foo,bar --format json-pretty --naked-res',
+            src_plang => 'bash',
+        },
+    ],
+    links => [
+        {url=>'prog:cross', summary => 'The original script'},
+        {url=>'prog:setop', summary => 'Can also do cross product aside from other set operations'},
     ],
 };
 sub cross {
